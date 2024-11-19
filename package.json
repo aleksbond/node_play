@@ -1,14 +1,24 @@
 {
-  "name": "node_play",
-  "version": "1.0.0",
-  "description": "Node play and practice",
-  "main": "index.js",
+  "name": "node-play",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "DEBUG=node-play:* nodemon ./bin/www",
+    "eslint": "eslint ./",
+    "eslint-fix": "eslint ./ --fix"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "webpack": "^5.96.1"
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "^3.1.10",
+    "express": "^4.21.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.15.0",
+    "eslint": "^9.15.0",
+    "globals": "^15.12.0",
+    "nodemon": "^3.1.7"
   }
 }
